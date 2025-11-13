@@ -1,2 +1,5 @@
-gsutil cp gs://log_files_bucket_chirag/logfiles.txt /home/chiragvenkatesh92
-hadoop fs -copyFromLocal /home/chiragvenkatesh92/logfiles.txt /user/chirag_admin
+Step 1: Upload the file into Google Cloud bucket via console
+Step 2: SSH into the Namenode or Master Linux terminal and write the below code
+		gsutil cp gs://log_files_bucket_chirag/logfiles.txt /home/chiragvenkatesh92
+Step 3: Transfer the file to the HDFS using the below code
+		hadoop fs -copyFromLocal /home/chiragvenkatesh92/logfiles.txt  /user/chirag_admin
