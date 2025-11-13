@@ -1,0 +1,2 @@
+gsutil cp gs://log_files_bucket_chirag/logfiles.txt /home/chiragvenkatesh92
+hadoop fs -copyFromLocal /home/chiragvenkatesh92/logfiles.txt /user/chirag_admin
